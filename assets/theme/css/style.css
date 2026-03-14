@@ -970,8 +970,6 @@ blockquote {
 section.display-7 {
   display: none !important;
 }
-  display: none !important;
-}
 
 /* Active menu item */
 .navbar .nav-link.active {
