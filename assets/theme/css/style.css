@@ -963,30 +963,3 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
-
-
-
-section.display-7 {
-  display: none !important;
-}
-
-
-section.display-7 {
-  display: none !important;
-}
-
-/* Active menu item */
-.navbar .nav-link.active {
-  color: #b8956a !important;
-  position: relative;
-}
-
-.navbar .nav-link.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: #b8956a;
-}
