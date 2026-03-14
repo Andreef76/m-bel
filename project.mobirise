@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Bewerbungsunterlagen – Architekt",
+    "name": "Treova Möbel",
     "currentPage": "index.html",
     "theme": {
       "name": "startm5",
@@ -277,10 +277,10 @@
         "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
       }
     ],
-    "favicon": "@PROJECT_PATH@/assets/images/logo-arch2.svg",
+    "favicon": "@PROJECT_PATH@/assets/images/logo-t20e2809420d0bad0bed0bfd0b8d18f-128x108.png",
     "usedWebp": true,
     "imageResize": true,
-    "mbrsiteDomain": "h669faudnv",
+    "mbrsiteDomain": "tfpqgi8zql",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -299,13 +299,13 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Bewerbung",
-        "meta_descr": "Unterlagen für die Bewerbung – Architekt",
+        "title": "Treova Möbel",
+        "meta_descr": "Qualität braucht Zeit",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/logo_arch1.svg"
+        "meta_image": "@PROJECT_PATH@/assets/images/logo_t%2520%25e2%2580%2594%2520%25d0%25ba%25d0%25be%25d0%25bf%25d0%25b8%25d1%258f-466x393.png"
       },
       "components": [
         {
