@@ -66,3 +66,40 @@ else document.querySelectorAll(".pie_progress").length&&("undefined"!==typeof Ci
 (window.initTestimonialsPlugin=!0,document.querySelectorAll(".testimonials-slider").forEach(function(a){x(a)}));l(function(){n||Array.from(document.body.children).filter(function(a){return!a.matches("style, script")}).forEach(function(a){if(window.Event&&"function"===typeof window.Event)var b=new Event("add.cards");else b=document.createEvent("CustomEvent"),b.initEvent("add.cards",!0,!0);a.dispatchEvent(b)})});l(function(){var a=!0,b=function(){var b=document.querySelector(".navbar-dropdown");if(b&&
 !b.classList.contains("opacityScrollOff")){var c=1<document.documentElement.scrollTop;if(c!==a||b.classList.contains("opacityScroll")){var d=document.querySelector(".navbar-collapse");a=c;b.classList.toggle("opacityScroll",!c);d&&d.classList.toggle("opacityScroll",!c)}}};b();window.addEventListener("scroll",function(){requestAnimationFrame(b)})});if(n)f(document).on("add.cards",D);else window.addEventListener("DOMContentLoaded",D);if(n)f(document).on("add.cards",E);else window.addEventListener("DOMContentLoaded",
 E)})();document.getElementsByTagName("body")[0].setAttribute("style","z-index: 0");!function(){try{document.getElementsById("top-1")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.style="display: none";a.innerHTML='<a href="https://mobirise.com/web-page-maker.html">Free Web Page Builder</a> Mobirise v6.1.9 <a href="https://mobirise.com/offline-website-builder.html">Best Offline Web Page Creator</a>';document.body.insertBefore(a,document.body.childNodes[0])}}();
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuLinks = document.querySelectorAll(
+    '.navbar .nav-link[href*="#"]'
+  );
+
+  const sections = [];
+
+  menuLinks.forEach(link => {
+    const hash = link.getAttribute("href").split("#")[1];
+    const section = document.getElementById(hash);
+    if (section) {
+      sections.push({ link, section });
+    }
+  });
+
+  function onScroll() {
+    const scrollPos = window.scrollY + 120; // поправка на фиксированное меню
+
+    sections.forEach(item => {
+      const top = item.section.offsetTop;
+      const height = item.section.offsetHeight;
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        menuLinks.forEach(l => l.classList.remove("active"));
+        item.link.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // запуск при загрузке
+});
+
